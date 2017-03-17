@@ -1,4 +1,5 @@
 const express = require("express")
+const moment = require('moment')
 const app = express();
 
 // set the port of our application
@@ -6,7 +7,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
-    res.status(200).send("Request ok.")
+    res.status(200).send(req.header('user-agent'))
     })
 
 app.listen(port, () => {
