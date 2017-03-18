@@ -1,18 +1,17 @@
 {
-  "name": "timestamp",
+  "name": "request-header-parser",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "ua-parser": "^0.3.5"
   },
-  "devDependencies": {
-    "lite-server": "^2.3.0"
-  }
+  "devDependencies": {}
 }
